@@ -1,0 +1,35 @@
+{
+  "name": "express-jwt-auth",
+  "version": "1.0.0",
+  "description": "Node.js API leveraging Express and MongoDB for secure JWT-based authentication with tokens. Ensures a robust foundation for building secure backends and APIs.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "devStart": "nodemon --exec ts-node src/index.ts",
+    "prod": "npm run build && npm run start",
+    "dev": "concurrently \"npm run build\" \"npm run devStart\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  }
+}
